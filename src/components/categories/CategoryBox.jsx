@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import qs from 'query-string'
 
 const CategoryBox = ({ label, icon: Icon, selected }) => {
-    console.log(selected);
+    // console.log(selected);
   const [params ,setParams] =useSearchParams();
   const navigate = useNavigate();
   const handleClick = () => {

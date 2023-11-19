@@ -1,14 +1,13 @@
 /* eslint-disable react/prop-types */
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
+
 import { DateRange } from 'react-date-range'
 
-const Calendar = ({ value,  }) => {
+const Calendar = ({ value }) => {
   return (
     <DateRange
+    ranges={[value]}
       rangeColors={['#F43F5E']}
-      ranges={[value]}
-    //   onChange={handleSelect}
+      onChange={console.log}
     //   date={value.startDate}
       direction='vertical'
       showDateDisplay={false}
