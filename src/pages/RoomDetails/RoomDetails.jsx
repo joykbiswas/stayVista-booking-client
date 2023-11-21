@@ -36,4 +36,3 @@ const RoomDetails = () => {
 };
 
 export default RoomDetails;
-// fetch('https://raw.githubusercontent.com/shakilahmedatik/stay-vista-resources/main/data/room.json')
