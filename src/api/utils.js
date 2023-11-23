@@ -1,6 +1,7 @@
 
 
 import axios from "axios";
+import axiosSecure from ".";
 
 export const imageUpload = async image =>{
      
@@ -13,4 +14,10 @@ export const imageUpload = async image =>{
         }`,
         formData );
      return data
+}
+
+//admin start
+export const getAdminStat = async () =>{
+  const {data} =await axiosSecure.get('/admin-stat')
+  return data;
 }
